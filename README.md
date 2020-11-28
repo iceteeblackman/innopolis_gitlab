@@ -20,4 +20,5 @@ docker run --detach   --hostname gitlab003  --publish 443:443 --publish 80:80 --
 Проблема общения контейнеров между собой
 
 firewall-cmd --zone=public --add-masquerade --permanent 
+
 firewall-cmd --reload 
