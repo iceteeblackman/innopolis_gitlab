@@ -22,3 +22,7 @@ docker run --detach   --hostname gitlab003  --publish 443:443 --publish 80:80 --
 firewall-cmd --zone=public --add-masquerade --permanent 
 
 firewall-cmd --reload 
+
+Логирование:
+
+docker run --log-driver gelf --log-opt gelf-address=udp://localhost:12201 ...
